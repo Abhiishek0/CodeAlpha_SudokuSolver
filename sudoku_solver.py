@@ -6,7 +6,7 @@ root = tk.Tk()
 root.title("🧩 Sudoku Solver – CodeAlpha")
 cells = [[None for _ in range(9)] for _ in range(9)]
 
-# === Backtracking Solver ===
+#  Backtracking Solver
 def is_valid(board, row, col, num):
     for i in range(9):
         if board[row][i] == num or board[i][col] == num:
